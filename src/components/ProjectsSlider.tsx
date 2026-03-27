@@ -74,10 +74,14 @@ export default function ProjectsSlider() {
                 <div className={`absolute inset-0 bg-linear-to-t ${project.color} to-transparent opacity-60`} />
                 
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-surface/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary text-slate-950 flex items-center justify-center scale-75 group-hover:scale-100 transition-transform duration-500">
+                <div className="absolute inset-0 bg-primary/10 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <motion.div 
+                    initial={{ scale: 0.5, opacity: 0 }}
+                    whileHover={{ scale: 1.1 }}
+                    className="w-16 h-16 rounded-full bg-white text-slate-950 flex items-center justify-center shadow-2xl"
+                  >
                     <ExternalLink size={24} />
-                  </div>
+                  </motion.div>
                 </div>
               </motion.div>
 

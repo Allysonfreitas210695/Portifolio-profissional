@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 import ProjectsSlider from "@/components/ProjectsSlider";
 import { Sparkles, Code, Globe, Zap } from "lucide-react";
 
@@ -12,13 +13,15 @@ export default function Home() {
 
       {/* Trust Bar Placeholder */}
       <section className="py-12 md:py-20 border-y border-white/5 opacity-40">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-wrap justify-center md:justify-between items-center gap-x-12 gap-y-8 font-headline font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] text-center">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-wrap justify-center md:justify-between items-center gap-x-12 gap-y-8 font-headline font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] text-center text-on-surface-variant">
           <span className="flex items-center gap-2"><Globe size={16} /> Global Scale</span>
           <span className="flex items-center gap-2"><Code size={16} /> Performance First</span>
           <span className="flex items-center gap-2"><Zap size={16} /> Rapid Deployment</span>
           <span className="flex items-center gap-2"><Sparkles size={16} /> Premium Design</span>
         </div>
       </section>
+
+      <Services />
 
       <ProjectsSlider />
       

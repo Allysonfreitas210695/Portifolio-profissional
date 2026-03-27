@@ -33,108 +33,113 @@ export default function Hero() {
   return (
     <section className="mesh-gradient relative flex min-h-screen items-center overflow-hidden pt-32 md:pt-20">
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
-        <div className="grid grid-cols-1 items-center gap-12 lg:gap-16 lg:grid-cols-12">
-          {/* Left Column: Content */}
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          {/* Left Column: Content (Asymmetrical 60%) */}
           <motion.div
-            className="lg:col-span-7"
+            className="lg:w-[60%] order-2 lg:order-1"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.div
-              className="bg-primary/10 border-primary/20 mb-8 inline-flex items-center gap-2 rounded-full border px-3 py-1"
+              className="bg-primary/5 border-primary/20 mb-8 inline-flex items-center gap-2 rounded-full border px-4 py-1.5 backdrop-blur-sm"
               variants={itemVariants}
             >
-              <Sparkles size={14} className="text-primary" />
+              <Sparkles size={14} className="text-primary animate-pulse" />
               <span className="font-label text-primary text-[10px] font-bold tracking-[0.2em] uppercase">
-                Fullstack Developer
+                Premium B2B Experience
               </span>
             </motion.div>
 
             <motion.h1
-              className="font-headline mb-8 text-5xl leading-[0.9] font-bold tracking-tighter text-balance md:text-8xl"
+              className="font-headline mb-8 text-5xl leading-[0.95] font-bold tracking-tighter text-balance md:text-8xl lg:text-9xl"
               variants={itemVariants}
             >
-              Transformando <br />
-              Código em <span className="text-gradient">Arte Digital</span>
+              Arquitetando o <br />
+              <span className="text-mask">Extraordinário</span>
             </motion.h1>
 
             <motion.p
-              className="text-on-surface-variant font-body mb-12 max-w-xl text-lg leading-relaxed md:text-xl"
+              className="text-on-surface-variant font-body mb-12 max-w-xl text-lg leading-relaxed md:text-xl opacity-80"
               variants={itemVariants}
             >
-              Arquiteto de experiências digitais de alto impacto. Fundindo precisão técnica com
-              estética editorial para criar o extraordinário no B2B.
+              Para empresas que não aceitam o comum. Fundindo precisão técnica com curadoria 
+              estética para criar ativos digitais que definem mercados.
             </motion.p>
 
             <motion.div className="flex flex-col gap-6 sm:flex-row" variants={itemVariants}>
               <Magnetic>
-                <button className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-xl px-8 py-4 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                <button className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-2xl px-10 py-5 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98]">
                   <span className="relative z-10 flex items-center gap-2">
-                    Iniciar Projeto{" "}
+                    Elevar meu Negócio{" "}
                     <ArrowRight
                       size={20}
                       className="transition-transform group-hover:translate-x-1"
                     />
                   </span>
-                  <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+                  <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
                 </button>
               </Magnetic>
 
               <Magnetic>
-                <button className="bg-surface-container-low text-on-surface border-outline-variant font-headline hover:bg-surface-container rounded-xl border px-8 py-4 text-lg font-bold transition-colors">
-                  Ver Portfólio
+                <button className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10">
+                  Estudos de Caso
                 </button>
               </Magnetic>
             </motion.div>
 
             <motion.div
-              className="mt-16 flex items-center gap-8 opacity-40 grayscale transition-all duration-500 hover:opacity-100 hover:grayscale-0"
+              className="mt-20 flex flex-wrap items-center gap-x-10 gap-y-6 opacity-30 grayscale transition-all duration-700 hover:opacity-60 hover:grayscale-0"
               variants={itemVariants}
             >
-              <div className="font-label text-on-surface-variant text-[10px] tracking-widest uppercase">
-                Trusted by
+              <div className="font-label text-on-surface-variant text-[10px] tracking-[0.3em] font-bold uppercase">
+                Expertise
               </div>
-              <div className="bg-outline-variant h-px w-12" />
-              {/* Simple aesthetic icons could go here */}
+              <div className="flex items-center gap-8 text-sm font-headline font-bold">
+                <span>NEXT.JS</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>TYPESCRIPT</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <span>B2B STRATEGY</span>
+              </div>
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Image */}
+          {/* Right Column: Image (Asymmetrical 40%) */}
           <motion.div
-            className="relative lg:col-span-5"
-            initial={{ opacity: 0, scale: 0.9, x: 50 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.5 }}
+            className="relative lg:w-[40%] order-1 lg:order-2"
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.4 }}
           >
-            <div className="group relative z-10 aspect-square w-full overflow-hidden rounded-[2rem]">
+            <div className="group relative z-10 aspect-4/5 w-full overflow-hidden rounded-[3rem] border border-white/10 ambient-shadow">
               <Image
                 src="/logo.png"
                 alt="Allyson Freitas"
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 priority
               />
-              <div className="absolute inset-0 rounded-[2rem] ring-1 ring-white/10 ring-inset" />
+              <div className="absolute inset-0 bg-linear-to-t from-background/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
 
-            {/* Decorative "Aura" */}
-            <div className="bg-primary/10 absolute -top-20 -right-20 -z-10 h-[140%] w-[140%] animate-pulse rounded-full blur-[100px]" />
-            <div className="bg-secondary/5 absolute -bottom-10 -left-10 -z-10 h-[80%] w-[80%] rounded-full blur-[80px]" />
+            {/* Decorative Decorative Blobs */}
+            <div className="bg-primary/20 absolute -top-12 -right-12 -z-10 h-64 w-64 animate-pulse rounded-full blur-[100px]" />
+            <div className="bg-secondary/10 absolute -bottom-12 -left-12 -z-10 h-48 w-48 rounded-full blur-[80px]" />
 
             {/* Floating Card UI Element */}
             <motion.div
-              className="glass-card ambient-shadow absolute bottom-4 left-4 md:-bottom-6 md:-left-6 z-20 rounded-2xl p-3 md:p-4 scale-90 md:scale-100"
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" as any }}
+              className="glass-card bento-inner-shadow ambient-shadow absolute -bottom-6 -right-6 lg:-left-12 z-20 rounded-3xl p-5 scale-90 md:scale-100 border border-white/10"
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" as any }}
             >
-              <div className="flex items-center gap-3">
-                <div className="bg-primary/20 flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-full">
-                  <Sparkles size={16} className="text-primary" />
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/20 flex h-12 w-12 items-center justify-center rounded-2xl">
+                  <Sparkles size={20} className="text-primary" />
                 </div>
                 <div>
-                  <div className="text-on-surface text-[10px] md:text-xs font-bold whitespace-nowrap">Digital Curator</div>
-                  <div className="text-on-surface-variant text-[8px] md:text-[10px] whitespace-nowrap">Artesanal & Técnico</div>
+                  <div className="text-on-surface text-sm font-bold tracking-tight">Curadoria Digital</div>
+                  <div className="text-on-surface-variant text-[11px] font-medium leading-tight">Design de Alta Fidelidade & Tech</div>
                 </div>
               </div>
             </motion.div>
