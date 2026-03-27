@@ -52,19 +52,18 @@ export default function Hero() {
             </motion.div>
 
             <motion.h1
-              className="font-headline mb-8 text-4xl leading-[1] font-bold tracking-tighter text-balance md:text-6xl lg:text-7xl"
+              className="font-headline mb-8 text-5xl leading-[1] font-bold tracking-tighter text-balance md:text-7xl lg:text-8xl"
               variants={itemVariants}
             >
-              Desenvolvedor Fullstack <br />
-              <span className="text-mask">.NET & Next.js</span>
+              Desenvolvedor <span className="text-mask">Fullstack</span>
             </motion.h1>
 
             <motion.p
               className="text-on-surface-variant font-body mb-12 max-w-xl text-lg leading-relaxed md:text-xl opacity-80"
               variants={itemVariants}
             >
-              Mais de 4 anos de experiência na <strong>CSJ Sistemas</strong> em São José dos Campos, 
-              entregando soluções escaláveis com precisão técnica e as melhores práticas de mercado.
+              Iniciei minha jornada em 2019 sem saber nada de tecnologia. Hoje, com mais de 4 anos de experiência na <strong>CSJ Sistemas</strong>, 
+              construo sistemas robustos e escaláveis. Pronto para impulsionar seu próximo desafio técnico.
             </motion.p>
 
             <motion.div className="flex flex-col gap-6 sm:flex-row" variants={itemVariants}>

@@ -7,25 +7,25 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "BarberAgenda Online",
-    description: "Sistema completo de agendamento e gestão B2B para barbearias de alto padrão. O estilo que você merece, com a praticidade que você precisa.",
-    image: "/projects/barber-hero.png",
-    tags: ["Next.js", "Tailwind 4", "Prisma", "Dashboard"],
+    title: "Barber Shop",
+    description: "Sistema completo para agendamento e gestão de barbearias.",
+    image: "/projects/barber_preview.png",
+    tags: ["Next.js", "C#", "SQL Server"],
     color: "from-orange-500/20",
   },
   {
     id: 2,
     title: "Mente Contábil",
     description: "Sistema de gestão e contabilidade inteligente.",
-    image: "/projects/mente-contabil.png",
-    tags: ["Next.js", "Prisma", "Tailwind"],
+    image: "/projects/mente_contabil_preview.png",
+    tags: ["Next.js", "Prisma", "SQL Server"],
     color: "from-purple-500/20",
   },
 ];
 
 export default function ProjectsSlider() {
   return (
-    <section id="projetos" className="py-24 md:py-32 bg-surface overflow-hidden">
+    <section id="projetos" className="py-20 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-16 md:mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
           <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tighter">

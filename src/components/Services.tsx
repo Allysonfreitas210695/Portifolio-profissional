@@ -1,33 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layers, Zap, Layout, Target, MousePointer2, Cpu } from "lucide-react";
+import { Layers, Zap, Layout, Cpu } from "lucide-react";
 
 const services = [
   {
-    title: "Sistemas .NET & C#",
-    description: "Desenvolvimento de backends robustos, APIs escaláveis e arquitetura de microserviços com foco em performance e segurança.",
+    title: "Backend Core",
+    description: "Desenvolvimento de backends robustos e APIs escaláveis utilizando .NET (C#) e Node.js.",
     icon: <Cpu className="text-primary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-primary/5",
   },
   {
-    title: "Frontend Moderno",
-    description: "Interfaces responsivas e interativas com Next.js, React e TypeScript.",
+    title: "Frontend & UI",
+    description: "Interfaces modernas e responsivas com Next.js, React, TypeScript, Tailwind e Bootstrap.",
     icon: <Layout className="text-secondary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-secondary/5",
   },
   {
-    title: "Ruby on Rails",
-    description: "Agilidade no desenvolvimento de aplicações web completas e seguras.",
+    title: "Cloud & Devops",
+    description: "Experiência em ambientes Cloud (Azure/AWS) e deploy contínuo.",
     icon: <Zap className="text-primary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-primary/5",
   },
   {
-    title: "Cloud & Banco de Dados",
-    description: "Gestão de infraestrutura na Azure/AWS e modelagem otimizada de bancos PostgreSQL e SQL Server.",
+    title: "Infra & DB",
+    description: "Modelagem e gestão de bancos de dados PostgreSQL e SQL Server de alta criticidade.",
     icon: <Layers className="text-secondary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-secondary/5",
@@ -36,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="habilidades" className="py-32 bg-background relative overflow-hidden">
+    <section id="habilidades" className="py-20 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-20 text-center lg:text-left">
           <motion.div 
@@ -84,11 +84,6 @@ export default function Services() {
               </div>
 
               {/* Decorative elements inside bento item */}
-              <div className="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity">
-                {index === 0 && <MousePointer2 size={160} className="rotate-12" />}
-                {index === 3 && <Cpu size={160} />}
-              </div>
-              
               <div className="absolute inset-0 bento-inner-shadow pointer-events-none" />
             </motion.div>
           ))}
