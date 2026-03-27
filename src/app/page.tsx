@@ -14,10 +14,10 @@ export default function Home() {
       {/* Trust Bar Placeholder */}
       <section className="py-12 md:py-20 border-y border-white/5 opacity-40">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 flex flex-wrap justify-center md:justify-between items-center gap-x-12 gap-y-8 font-headline font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] text-center text-on-surface-variant">
-          <span className="flex items-center gap-2"><Globe size={16} /> Global Scale</span>
-          <span className="flex items-center gap-2"><Code size={16} /> Performance First</span>
-          <span className="flex items-center gap-2"><Zap size={16} /> Rapid Deployment</span>
-          <span className="flex items-center gap-2"><Sparkles size={16} /> Premium Design</span>
+          <span className="flex items-center gap-2"><Globe size={16} /> Escala Global</span>
+          <span className="flex items-center gap-2"><Code size={16} /> Código Limpo</span>
+          <span className="flex items-center gap-2"><Zap size={16} /> Alta Performance</span>
+          <span className="flex items-center gap-2"><Sparkles size={16} /> Design Técnico</span>
         </div>
       </section>
 
@@ -30,20 +30,28 @@ export default function Home() {
         <div className="relative bg-linear-to-br from-surface-container-low to-background p-8 md:p-32 rounded-3xl md:rounded-[3.5rem] border border-white/5 overflow-hidden group">
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-7xl font-headline font-bold mb-8 leading-[1.1] tracking-tighter">
-              Vamos construir o <br />
-              <span className="text-gradient">próximo extraordinário?</span>
+              Vamos construir algo <br />
+              <span className="text-gradient">sólido juntos?</span>
             </h2>
             <p className="text-base md:text-xl text-on-surface-variant font-body mb-12 max-w-2xl mx-auto leading-relaxed">
-              Minha curadoria técnica e estética está à disposição do seu negócio. 
-              Transformo desafios complexos em soluções digitais que convertem e encantam.
+              Estou pronto para aplicar minha experiência técnica no seu próximo desafio. 
+              Soluções Fullstack que unem robustez no backend e agilidade no frontend.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-              <button className="px-8 md:px-12 py-4 md:py-5 bg-white text-slate-950 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-primary transition-colors shadow-2xl shadow-primary/20">
-                Solicitar Orçamento
-              </button>
-              <button className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors">
-                WhatsApp
-              </button>
+              <a 
+                href="https://wa.me/5584998138643"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 md:px-12 py-4 md:py-5 bg-white text-slate-950 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-primary transition-colors shadow-2xl shadow-primary/20 flex items-center justify-center"
+              >
+                Falar no WhatsApp
+              </a>
+              <a 
+                href="mailto:contato@allysonfreitas.dev"
+                className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors flex items-center justify-center opacity-60 pointer-events-none"
+              >
+                contato@allysonfreitas.dev (Breve)
+              </a>
             </div>
           </div>
           
@@ -62,7 +70,7 @@ export default function Home() {
             </div>
             <p className="text-sm font-label text-on-surface-variant tracking-wider max-w-xs">
               © 2024 Allyson Freitas. <br />
-              Digital Curator • Fullstack Developer B2B.
+              Desenvolvedor Fullstack .NET & Next.js.
             </p>
           </div>
           
@@ -79,8 +87,8 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Legal</h4>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">Curated Design</a>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">Terms</a>
+              <a href="https://wa.me/5584998138643" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">WhatsApp</a>
+              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">Termos</a>
             </div>
           </div>
         </div>

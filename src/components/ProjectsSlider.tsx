@@ -28,11 +28,11 @@ export default function ProjectsSlider() {
     <section id="projetos" className="py-24 md:py-32 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-16 md:mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
-          <h2 className="text-4xl md:text-6xl font-headline font-bold mb-6 tracking-tighter">
-            Trabalhos <span className="text-gradient">Selecionados</span>
+          <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tighter">
+            Projetos <span className="text-gradient">Selecionados</span>
           </h2>
           <p className="text-on-surface-variant font-body max-w-xl text-lg leading-relaxed">
-            Uma curadoria de projetos onde a engenharia encontra o design para resolver desafios comerciais complexos.
+            Uma seleção de sistemas onde a engenharia de software resolve desafios técnicos e de negócios com alta performance.
           </p>
         </div>
         <div className="hidden md:block">

@@ -5,30 +5,30 @@ import { Layers, Zap, Layout, Target, MousePointer2, Cpu } from "lucide-react";
 
 const services = [
   {
-    title: "Estratégia B2B",
-    description: "Consultoria técnica para transformar modelos de negócio complexos em arquiteturas digitais escaláveis e eficientes.",
-    icon: <Target className="text-primary" size={24} />,
+    title: "Sistemas .NET & C#",
+    description: "Desenvolvimento de backends robustos, APIs escaláveis e arquitetura de microserviços com foco em performance e segurança.",
+    icon: <Cpu className="text-primary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-primary/5",
   },
   {
-    title: "Desenvolvimento Fullstack",
-    description: "Sistemas robustos com Next.js, React e Node.js.",
-    icon: <Layers className="text-secondary" size={24} />,
+    title: "Frontend Moderno",
+    description: "Interfaces responsivas e interativas com Next.js, React e TypeScript.",
+    icon: <Layout className="text-secondary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-secondary/5",
   },
   {
-    title: "UX/UI Curated Design",
-    description: "Interfaces que encantam e convertem usuários exigentes.",
-    icon: <Layout className="text-primary" size={24} />,
+    title: "Ruby on Rails",
+    description: "Agilidade no desenvolvimento de aplicações web completas e seguras.",
+    icon: <Zap className="text-primary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-primary/5",
   },
   {
-    title: "Alta Performance",
-    description: "Otimização extrema de performance e SEO para garantir que seu produto lidere o mercado.",
-    icon: <Zap className="text-secondary" size={24} />,
+    title: "Cloud & Banco de Dados",
+    description: "Gestão de infraestrutura na Azure/AWS e modelagem otimizada de bancos PostgreSQL e SQL Server.",
+    icon: <Layers className="text-secondary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-secondary/5",
   },
@@ -36,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-32 bg-background relative overflow-hidden">
+    <section id="habilidades" className="py-32 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-20 text-center lg:text-left">
           <motion.div 
@@ -46,17 +46,17 @@ export default function Services() {
             className="flex items-center gap-2 justify-center lg:justify-start mb-6"
           >
             <div className="w-12 h-px bg-primary/30" />
-            <span className="font-label text-primary text-[10px] font-bold tracking-[0.3em] uppercase">Especialidades</span>
+            <span className="font-label text-primary text-[10px] font-bold tracking-[0.3em] uppercase">Tech Stack</span>
           </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-headline font-bold tracking-tighter text-balance"
+            className="text-4xl md:text-5xl font-headline font-bold tracking-tighter text-balance"
           >
-            Soluções que impulsionam o <br />
-            <span className="text-gradient">Próximo Nível</span>
+            Habilidades & <br />
+            <span className="text-gradient">Especialidades Técnicas</span>
           </motion.h2>
         </div>
 

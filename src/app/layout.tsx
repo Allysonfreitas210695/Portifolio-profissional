@@ -20,19 +20,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://allysonfreitas.dev"), // Placeholder: user can update this later
   title: {
-    default: "Allyson Freitas | Digital Curator & Fullstack Developer",
+    default: "Allyson Freitas | Desenvolvedor Fullstack .NET & Next.js",
     template: "%s | Allyson Freitas",
   },
-  description: "Especialista em construir soluções digitais de alto impacto que fundem engenharia de software com estética editorial e curadoria digital para o mercado B2B.",
+  description: "Desenvolvedor Fullstack com mais de 4 anos de experiência, especializado em .NET, React e Next.js para soluções escaláveis.",
   keywords: [
     "Allyson Freitas", 
     "Desenvolvedor Fullstack", 
     "Software Engineer", 
     "Next.js", 
+    ".NET Developer", 
+    "C#", 
     "React Specialist", 
-    "Curadoria Digital", 
-    "Design UX/UI", 
-    "B2B Solutions"
+    "Azure", 
+    "Cloud Solutions"
   ],
   authors: [{ name: "Allyson Freitas" }],
   creator: "Allyson Freitas",
@@ -41,8 +42,8 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "/",
     siteName: "Allyson Freitas Portfolio",
-    title: "Allyson Freitas | Digital Curator & Fullstack Developer",
-    description: "Transformando desafios complexos em experiências digitais extraordinárias através de precisão técnica e curadoria estética.",
+    title: "Allyson Freitas | Desenvolvedor Fullstack .NET & Next.js",
+    description: "Desenvolvedor Fullstack com mais de 4 anos de experiência na CSJ Sistemas, criando soluções robustas com .NET e Next.js.",
     images: [
       {
         url: "/og-image.png", // Next.js will automatically look for opengraph-image.png/jpg/etc. in /app
@@ -54,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Allyson Freitas | Digital Curator & Fullstack Developer",
-    description: "Transformando desafios complexos em experiências digitais extraordinárias através de precisão técnica e curadoria estética.",
+    title: "Allyson Freitas | Desenvolvedor Fullstack .NET & Next.js",
+    description: "Desenvolvedor Fullstack com mais de 4 anos de experiência na CSJ Sistemas, criando soluções robustas com .NET e Next.js.",
     creator: "@allysonfreitas",
     images: ["/og-image.png"],
   },

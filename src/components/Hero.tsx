@@ -47,60 +47,68 @@ export default function Hero() {
             >
               <Sparkles size={14} className="text-primary animate-pulse" />
               <span className="font-label text-primary text-[10px] font-bold tracking-[0.2em] uppercase">
-                Premium B2B Experience
+                Fullstack Developer
               </span>
             </motion.div>
 
             <motion.h1
-              className="font-headline mb-8 text-5xl leading-[0.95] font-bold tracking-tighter text-balance md:text-8xl lg:text-9xl"
+              className="font-headline mb-8 text-4xl leading-[1] font-bold tracking-tighter text-balance md:text-6xl lg:text-7xl"
               variants={itemVariants}
             >
-              Arquitetando o <br />
-              <span className="text-mask">Extraordinário</span>
+              Desenvolvedor Fullstack <br />
+              <span className="text-mask">.NET & Next.js</span>
             </motion.h1>
 
             <motion.p
               className="text-on-surface-variant font-body mb-12 max-w-xl text-lg leading-relaxed md:text-xl opacity-80"
               variants={itemVariants}
             >
-              Para empresas que não aceitam o comum. Fundindo precisão técnica com curadoria 
-              estética para criar ativos digitais que definem mercados.
+              Mais de 4 anos de experiência na <strong>CSJ Sistemas</strong> em São José dos Campos, 
+              entregando soluções escaláveis com precisão técnica e as melhores práticas de mercado.
             </motion.p>
 
             <motion.div className="flex flex-col gap-6 sm:flex-row" variants={itemVariants}>
               <Magnetic>
-                <button className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-2xl px-10 py-5 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98]">
-                  <span className="relative z-10 flex items-center gap-2">
-                    Elevar meu Negócio{" "}
-                    <ArrowRight
-                      size={20}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </span>
+                <a 
+                  href="https://wa.me/5584998138643"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-2xl px-10 py-5 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2"
+                >
+                  Fale Comigo
+                  <ArrowRight
+                    size={20}
+                    className="transition-transform group-hover:translate-x-1"
+                  />
                   <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
-                </button>
+                </a>
               </Magnetic>
 
               <Magnetic>
-                <button className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10">
-                  Estudos de Caso
-                </button>
+                <a 
+                  href="#projetos"
+                  className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10 text-center"
+                >
+                  Ver Projetos
+                </a>
               </Magnetic>
             </motion.div>
 
             <motion.div
-              className="mt-20 flex flex-wrap items-center gap-x-10 gap-y-6 opacity-30 grayscale transition-all duration-700 hover:opacity-60 hover:grayscale-0"
+              className="mt-20 flex flex-wrap items-center gap-x-10 gap-y-6 opacity-40 transition-all duration-700 hover:opacity-100"
               variants={itemVariants}
             >
               <div className="font-label text-on-surface-variant text-[10px] tracking-[0.3em] font-bold uppercase">
-                Expertise
+                Principais Tecnologias
               </div>
-              <div className="flex items-center gap-8 text-sm font-headline font-bold">
-                <span>NEXT.JS</span>
-                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>TYPESCRIPT</span>
-                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span>B2B STRATEGY</span>
+              <div className="flex flex-wrap items-center gap-6 text-sm font-headline font-bold">
+                <span className="text-secondary">.NET / C#</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>REACT</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>AZURE</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>POSTGRESQL</span>
               </div>
             </motion.div>
           </motion.div>
@@ -112,7 +120,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.4 }}
           >
-            <div className="group relative z-10 aspect-4/5 w-full overflow-hidden rounded-[3rem] border border-white/10 ambient-shadow">
+            <div className="group relative z-10 aspect-4/5 w-full overflow-hidden rounded-[3rem] border border-white/10 ambient-shadow bg-surface-container">
               <Image
                 src="/logo.png"
                 alt="Allyson Freitas"
@@ -138,8 +146,8 @@ export default function Hero() {
                   <Sparkles size={20} className="text-primary" />
                 </div>
                 <div>
-                  <div className="text-on-surface text-sm font-bold tracking-tight">Curadoria Digital</div>
-                  <div className="text-on-surface-variant text-[11px] font-medium leading-tight">Design de Alta Fidelidade & Tech</div>
+                  <div className="text-on-surface text-sm font-bold tracking-tight">Especialista Fullstack</div>
+                  <div className="text-on-surface-variant text-[11px] font-medium leading-tight">+4 Anos de Experiência Real</div>
                 </div>
               </div>
             </motion.div>

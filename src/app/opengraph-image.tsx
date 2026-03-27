@@ -52,14 +52,14 @@ export default async function Image() {
         </div>
         <div
           style={{
-            fontSize: "36px",
+            fontSize: "42px",
             color: "#94a3b8",
             textAlign: "center",
             maxWidth: "900px",
             lineHeight: 1.4,
           }}
         >
-          Transformando desafios complexos em experiências digitais extraordinárias através de precisão técnica e curadoria estética.
+          Desenvolvedor Fullstack .NET & Next.js com mais de 4 anos de experiência na CSJ Sistemas.
         </div>
         <div
           style={{
@@ -75,7 +75,7 @@ export default async function Image() {
             textTransform: "uppercase",
           }}
         >
-          Fullstack Developer • Digital Curator
+          Fullstack Developer • .NET & Next.js
         </div>
       </div>
     ),
