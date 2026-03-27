@@ -7,25 +7,36 @@ import { ExternalLink } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Barber Shop",
+    title: "BarberAgenda Online",
     description: "Sistema completo para agendamento e gestão de barbearias.",
-    image: "/projects/barber_preview.png",
-    tags: ["Next.js", "C#", "SQL Server"],
+    image: "/projects/barber_agenda_online.png",
+    link: "https://barberagendaonline.com.br/",
+    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
     color: "from-orange-500/20",
   },
   {
     id: 2,
+    title: "OdontoSys",
+    description: "Gestão completa para clínicas odontológicas, agendamentos e prontuários.",
+    image: "/projects/odonto_sys.png",
+    link: "https://odonto-sys-henna.vercel.app",
+    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
+    color: "from-blue-500/20",
+  },
+  {
+    id: 3,
     title: "Mente Contábil",
-    description: "Sistema de gestão e contabilidade inteligente.",
-    image: "/projects/mente_contabil_preview.png",
-    tags: ["Next.js", "Prisma", "SQL Server"],
+    description: "Dashboard inteligente para gestão financeira e contabilidade empresarial.",
+    image: "/projects/mente_contabil.png",
+    link: "https://ledger-mind-xi.vercel.app",
+    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
     color: "from-purple-500/20",
   },
 ];
 
 export default function ProjectsSlider() {
   return (
-    <section id="projetos" className="py-20 bg-surface overflow-hidden">
+    <section id="projetos" className="py-8 md:py-12 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-16 md:mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
           <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tighter">
@@ -56,8 +67,11 @@ export default function ProjectsSlider() {
           }}
         >
           {[...projects, ...projects].map((project, index) => (
-            <div
+            <a
               key={`${project.id}-${index}`}
+              href={project.link || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               className="shrink-0 w-[300px] md:w-[450px] group cursor-pointer"
             >
               <motion.div 
@@ -69,6 +83,7 @@ export default function ProjectsSlider() {
                   src={project.image}
                   alt={project.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className={`absolute inset-0 bg-linear-to-t ${project.color} to-transparent opacity-60`} />
@@ -103,7 +118,7 @@ export default function ProjectsSlider() {
                   {project.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </motion.div>
       </div>

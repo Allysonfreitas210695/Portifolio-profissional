@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import React from "react";
 
 // Route segment config
 export const runtime = "edge";

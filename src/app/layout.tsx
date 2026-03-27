@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: "Desenvolvedor Fullstack com mais de 4 anos de experiência na CSJ Sistemas, criando soluções robustas com .NET e Next.js.",
     images: [
       {
-        url: "/og-image.png", // Next.js will automatically look for opengraph-image.png/jpg/etc. in /app
+        url: "/og-image.png", 
         width: 1200,
         height: 630,
         alt: "Allyson Freitas Portfolio",
@@ -86,6 +86,7 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`${spaceGrotesk.variable} ${manrope.variable} ${inter.variable} h-full antialiased dark`}
+      suppressHydrationWarning
     >
       <body className="min-h-full bg-background text-on-surface flex flex-col grainy-overlay">
         {children}

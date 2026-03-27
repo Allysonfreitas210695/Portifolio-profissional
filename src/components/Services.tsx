@@ -6,28 +6,28 @@ import { Layers, Zap, Layout, Cpu } from "lucide-react";
 const services = [
   {
     title: "Backend Core",
-    description: "Desenvolvimento de backends robustos e APIs escaláveis utilizando .NET (C#) e Node.js.",
+    description: "Backends robustos e APIs escaláveis com .NET (C#), Node.js, NestJS e Django.",
     icon: <Cpu className="text-primary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-primary/5",
   },
   {
     title: "Frontend & UI",
-    description: "Interfaces modernas e responsivas com Next.js, React, TypeScript, Tailwind e Bootstrap.",
+    description: "Interfaces modernas com Next.js, React, TypeScript, Tailwind, Bootstrap e shadcn/ui.",
     icon: <Layout className="text-secondary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-secondary/5",
   },
   {
-    title: "Cloud & Devops",
-    description: "Experiência em ambientes Cloud (Azure/AWS) e deploy contínuo.",
+    title: "Cloud & DevOps",
+    description: "Experiência em Azure, AWS e Jenkins, com foco em CI/CD e deploy contínuo.",
     icon: <Zap className="text-primary" size={24} />,
     size: "lg:col-span-1",
     bg: "bg-primary/5",
   },
   {
     title: "Infra & DB",
-    description: "Modelagem e gestão de bancos de dados PostgreSQL e SQL Server de alta criticidade.",
+    description: "Gestão de bancos PostgreSQL, SQL Server e DynamoDB (NoSQL) de alta criticidade.",
     icon: <Layers className="text-secondary" size={24} />,
     size: "lg:col-span-2",
     bg: "bg-secondary/5",
@@ -36,7 +36,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="habilidades" className="py-20 bg-background relative overflow-hidden">
+    <section id="habilidades" className="py-8 md:py-12 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-20 text-center lg:text-left">
           <motion.div 

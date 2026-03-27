@@ -34,9 +34,9 @@ export default function Hero() {
     <section className="mesh-gradient relative flex min-h-screen items-center overflow-hidden pt-32 md:pt-20">
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-          {/* Left Column: Content (Asymmetrical 60%) */}
+          {/* Main Column */}
           <motion.div
-            className="lg:w-[60%] order-2 lg:order-1"
+            className="lg:w-[60%] w-full"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -51,28 +51,58 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            <motion.h1
-              className="font-headline mb-8 text-5xl leading-[1] font-bold tracking-tighter text-balance md:text-7xl lg:text-8xl"
+            <motion.div 
+              className="lg:hidden relative mb-12 w-full max-w-[300px] h-[300px] mx-auto sm:mx-0"
               variants={itemVariants}
             >
-              Desenvolvedor <span className="text-mask">Fullstack</span>
+              <div className="relative h-full w-full overflow-hidden rounded-[2.5rem] border border-white/10 ambient-shadow bg-surface-container">
+                <Image
+                  src="/logo.png"
+                  alt="Allyson Freitas"
+                  fill
+                  sizes="300px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              
+              {/* Mobile Floating Card */}
+              <div className="glass-card bento-inner-shadow ambient-shadow absolute -bottom-4 -right-4 z-20 rounded-2xl p-3 border border-white/10">
+                <div className="flex items-center gap-3">
+                  <div className="bg-primary/20 flex h-8 w-8 items-center justify-center rounded-xl">
+                    <Sparkles size={14} className="text-primary" />
+                  </div>
+                  <div>
+                    <div className="text-on-surface text-[10px] font-bold tracking-tight leading-tight">Especialista Fullstack</div>
+                    <div className="text-on-surface-variant text-[8px] font-medium leading-tight">+4 Anos de Experiência</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.h1
+              className="font-headline mb-8 text-5xl leading-none font-bold tracking-tighter text-balance md:text-7xl lg:text-8xl"
+              variants={itemVariants}
+            >
+              Arquitetura de Software <br />
+              <span className="text-mask">Focada em Performance</span>
             </motion.h1>
 
             <motion.p
               className="text-on-surface-variant font-body mb-12 max-w-xl text-lg leading-relaxed md:text-xl opacity-80"
               variants={itemVariants}
             >
-              Iniciei minha jornada em 2019 sem saber nada de tecnologia. Hoje, com mais de 4 anos de experiência na <strong>CSJ Sistemas</strong>, 
-              construo sistemas robustos e escaláveis. Pronto para impulsionar seu próximo desafio técnico.
+              Especialista em desenvolvimento <strong>Fullstack .NET & Next.js</strong>. 
+              Transformo desafios técnicos complexos em sistemas robustos, escaláveis e com design premium.
             </motion.p>
 
-            <motion.div className="flex flex-col gap-6 sm:flex-row" variants={itemVariants}>
+            <motion.div className="flex flex-col gap-6 sm:flex-row sm:items-center" variants={itemVariants}>
               <Magnetic>
                 <a 
                   href="https://wa.me/5584998138643"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-2xl px-10 py-5 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2"
+                  className="group bg-primary font-headline ambient-shadow relative overflow-hidden rounded-2xl px-10 py-5 text-lg font-bold text-slate-950 transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
                 >
                   Fale Comigo
                   <ArrowRight
@@ -86,7 +116,7 @@ export default function Hero() {
               <Magnetic>
                 <a 
                   href="#projetos"
-                  className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10 text-center"
+                  className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10 flex items-center justify-center"
                 >
                   Ver Projetos
                 </a>
@@ -105,25 +135,41 @@ export default function Hero() {
                 <div className="w-1 h-1 rounded-full bg-primary" />
                 <span>REACT</span>
                 <div className="w-1 h-1 rounded-full bg-primary" />
-                <span>AZURE</span>
+                <span>NEXT.JS</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>DJANGO</span>
                 <div className="w-1 h-1 rounded-full bg-primary" />
                 <span>POSTGRESQL</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>DYNAMODB</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>AZURE</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>AWS</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>DOCKER</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>JENKINS</span>
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>GIT</span> 
+                <div className="w-1 h-1 rounded-full bg-primary" />
+                <span>GITHUB</span>  
               </div>
             </motion.div>
           </motion.div>
 
-          {/* Right Column: Image (Asymmetrical 40%) */}
           <motion.div
-            className="relative lg:w-[40%] order-1 lg:order-2"
+            className="relative lg:w-[40%] aspect-4/5 hidden lg:block"
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.4 }}
           >
-            <div className="group relative z-10 aspect-4/5 w-full overflow-hidden rounded-[3rem] border border-white/10 ambient-shadow bg-surface-container">
+            <div className="group relative z-10 h-full w-full overflow-hidden rounded-[3rem] border border-white/10 ambient-shadow bg-surface-container">
               <Image
                 src="/logo.png"
                 alt="Allyson Freitas"
                 fill
+                sizes="(max-width: 768px) 0vw, 33vw"
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 priority
               />

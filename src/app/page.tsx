@@ -2,6 +2,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import ProjectsSlider from "@/components/ProjectsSlider";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import { Sparkles, Code, Globe, Zap } from "lucide-react";
 
 export default function Home() {
@@ -21,12 +24,17 @@ export default function Home() {
         </div>
       </section>
 
-      <Services />
-
       <ProjectsSlider />
+
+      <About />
       
-      {/* Footer / Contact Preview */}
-      <section id="contato" className="py-24 md:py-40 max-w-7xl mx-auto px-6 sm:px-8">
+      <Services />
+      
+      <Experience />
+
+      <Education />
+      
+       <section id="contato" className="py-24 md:py-40 max-w-7xl mx-auto px-6 sm:px-8">
         <div className="relative bg-linear-to-br from-surface-container-low to-background p-8 md:p-32 rounded-3xl md:rounded-[3.5rem] border border-white/5 overflow-hidden group">
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-7xl font-headline font-bold mb-8 leading-[1.1] tracking-tighter">
@@ -47,10 +55,10 @@ export default function Home() {
                 Falar no WhatsApp
               </a>
               <a 
-                href="mailto:contato@allysonfreitas.dev"
+                href="mailto:alisonfr83@gmail.com"
                 className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors flex items-center justify-center opacity-60 pointer-events-none"
               >
-                contato@allysonfreitas.dev (Breve)
+                alisonfr83@gmail.com
               </a>
             </div>
           </div>
@@ -69,7 +77,7 @@ export default function Home() {
               <span className="text-2xl font-bold font-headline tracking-tighter text-on-surface text-balance">Allyson Freitas</span>
             </div>
             <p className="text-sm font-label text-on-surface-variant tracking-wider max-w-xs">
-              © 2024 Allyson Freitas. <br />
+             &copy; {new Date().getFullYear()} Allyson Freitas. <br />
               Desenvolvedor Fullstack .NET & Next.js.
             </p>
           </div>
@@ -77,13 +85,14 @@ export default function Home() {
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Social</h4>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">GitHub</a>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">LinkedIn</a>
+              <a href="https://github.com/Allysonfreitas210695" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/allyson-freitas-03326128a/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">LinkedIn</a>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Projetos</h4>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">BarberAgenda</a>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">Mente Contábil</a>
+              <a href="https://barberagendaonline.com.br/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">BarberAgenda Online</a>
+              <a href="https://odonto-sys-henna.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">OdontoSys</a>
+              <a href="https://ledger-mind-xi.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">Mente Contábil</a>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Legal</h4>
