@@ -6,6 +6,16 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    id: 0,
+    title: "Mesafy",
+    description:
+      "Sistema SaaS de gestão de restaurantes que une a sofisticação dos bistrôs com precisão operacional.",
+    image: "/projects/masafy.png",
+    link: "https://mesafy-teal.vercel.app/",
+    tags: ["Next.js", "Tailwind 4", "Prisma", "Framer Motion"],
+    color: "from-orange-600/20",
+  },
+  {
     id: 1,
     title: "BarberAgenda Online",
     description: "Sistema completo para agendamento e gestão de barbearias.",
@@ -36,32 +46,33 @@ const projects = [
 
 export default function ProjectsSlider() {
   return (
-    <section id="projetos" className="py-8 md:py-12 bg-surface overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 mb-16 md:mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8">
+    <section id="projetos" className="bg-surface overflow-hidden py-8 md:py-12">
+      <div className="mx-auto mb-16 flex max-w-7xl flex-col justify-between gap-8 px-6 text-center sm:px-8 md:mb-20 md:flex-row md:items-end md:text-left">
         <div>
-          <h2 className="text-4xl md:text-5xl font-headline font-bold mb-6 tracking-tighter">
+          <h2 className="font-headline mb-6 text-4xl font-bold tracking-tighter md:text-5xl">
             Projetos <span className="text-gradient">Selecionados</span>
           </h2>
           <p className="text-on-surface-variant font-body max-w-xl text-lg leading-relaxed">
-            Uma seleção de sistemas onde a engenharia de software resolve desafios técnicos e de negócios com alta performance.
+            Uma seleção de sistemas onde a engenharia de software resolve desafios técnicos e de
+            negócios com alta performance.
           </p>
         </div>
         <div className="hidden md:block">
-          <div className="flex gap-4 items-center text-on-surface-variant font-label text-xs uppercase tracking-widest">
+          <div className="text-on-surface-variant font-label flex items-center gap-4 text-xs tracking-widest uppercase">
             <span>Scroll para explorar</span>
-            <div className="w-12 h-px bg-outline-variant" />
+            <div className="bg-outline-variant h-px w-12" />
           </div>
         </div>
       </div>
 
       <div className="relative flex overflow-hidden">
         <motion.div
-          className="flex gap-6 md:gap-8 py-10 px-6 sm:px-8"
+          className="flex gap-6 px-6 py-10 sm:px-8 md:gap-8"
           animate={{
             x: ["0%", "-50%"],
           }}
           transition={{
-            duration: 40,
+            duration: 25,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -72,10 +83,10 @@ export default function ProjectsSlider() {
               href={project.link || "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 w-[300px] md:w-[450px] group cursor-pointer"
+              className="group w-[300px] shrink-0 cursor-pointer md:w-[450px]"
             >
-              <motion.div 
-                className="relative h-[220px] md:h-[300px] w-full rounded-3xl md:rounded-4xl overflow-hidden ambient-shadow border border-white/5"
+              <motion.div
+                className="ambient-shadow relative h-[220px] w-full overflow-hidden rounded-3xl border border-white/5 md:h-[300px] md:rounded-4xl"
                 whileHover={{ y: -12 }}
                 transition={{ duration: 0.5, ease: "easeOut" as any }}
               >
@@ -86,14 +97,16 @@ export default function ProjectsSlider() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className={`absolute inset-0 bg-linear-to-t ${project.color} to-transparent opacity-60`} />
-                
+                <div
+                  className={`absolute inset-0 bg-linear-to-t ${project.color} to-transparent opacity-60`}
+                />
+
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-primary/10 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <motion.div 
+                <div className="bg-primary/10 absolute inset-0 flex items-center justify-center opacity-0 backdrop-blur-[2px] transition-opacity group-hover:opacity-100">
+                  <motion.div
                     initial={{ scale: 0.5, opacity: 0 }}
                     whileHover={{ scale: 1.1 }}
-                    className="w-16 h-16 rounded-full bg-white text-slate-950 flex items-center justify-center shadow-2xl"
+                    className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-slate-950 shadow-2xl"
                   >
                     <ExternalLink size={24} />
                   </motion.div>
@@ -101,20 +114,25 @@ export default function ProjectsSlider() {
               </motion.div>
 
               <div className="mt-8 px-4">
-                <div className="flex gap-3 mb-4">
-                  {project.tags.map((tag) => (
+                <div className="mb-4 flex gap-3">
+                  {project.tags.slice(0, 3).map((tag) => (
                     <span
                       key={tag}
-                      className="text-[10px] font-bold font-label uppercase tracking-widest text-primary/70"
+                      className="font-label text-primary/70 text-[10px] font-bold tracking-widest uppercase"
                     >
                       {tag}
                     </span>
                   ))}
+                  {project.tags.length > 3 && (
+                    <span className="font-label text-primary/70 text-[10px] font-bold tracking-widest uppercase">
+                      ...
+                    </span>
+                  )}
                 </div>
-                <h3 className="text-2xl font-headline font-bold mb-3 group-hover:text-primary transition-colors tracking-tight">
+                <h3 className="font-headline group-hover:text-primary mb-3 text-2xl font-bold tracking-tight transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-on-surface-variant text-sm font-body leading-relaxed line-clamp-2">
+                <p className="text-on-surface-variant font-body line-clamp-2 text-sm leading-relaxed">
                   {project.description}
                 </p>
               </div>
@@ -124,9 +142,9 @@ export default function ProjectsSlider() {
       </div>
 
       <div className="mt-20 flex justify-center">
-        <div className="relative w-48 h-1 bg-surface-container-high rounded-full overflow-hidden">
-          <motion.div 
-            className="absolute top-0 left-0 h-full bg-primary rounded-full w-1/3"
+        <div className="bg-surface-container-high relative h-1 w-48 overflow-hidden rounded-full">
+          <motion.div
+            className="bg-primary absolute top-0 left-0 h-full w-1/3 rounded-full"
             animate={{ x: ["0%", "200%", "0%"] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           />

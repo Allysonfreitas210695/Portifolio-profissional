@@ -90,6 +90,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Projetos</h4>
+              <a href="https://mesafy-teal.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">Mesafy</a>
               <a href="https://barberagendaonline.com.br/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">BarberAgenda Online</a>
               <a href="https://odonto-sys-henna.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">OdontoSys</a>
               <a href="https://ledger-mind-xi.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">Mente Contábil</a>
