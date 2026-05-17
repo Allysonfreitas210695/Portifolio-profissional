@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Sparkles } from "lucide-react";
 
 import Magnetic from "./Magnetic";
 
@@ -114,13 +114,22 @@ export default function Hero() {
               </Magnetic>
 
               <Magnetic>
-                <a 
+                <a
                   href="#projetos"
                   className="bg-surface-container-low text-on-surface border-white/5 font-headline hover:bg-surface-container rounded-2xl border px-10 py-5 text-lg font-bold transition-all hover:border-white/10 flex items-center justify-center"
                 >
                   Ver Projetos
                 </a>
               </Magnetic>
+
+              <a
+                href="/curriculo.pdf"
+                download
+                className="text-on-surface-variant font-headline hover:text-primary flex items-center justify-center gap-2 text-sm font-bold transition-colors"
+              >
+                <Download size={16} />
+                Baixar CV
+              </a>
             </motion.div>
 
             <motion.div

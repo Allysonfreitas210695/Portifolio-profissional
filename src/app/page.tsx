@@ -87,6 +87,7 @@ export default function Home() {
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Social</h4>
               <a href="https://github.com/Allysonfreitas210695" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">GitHub</a>
               <a href="https://www.linkedin.com/in/allyson-freitas-03326128a/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">LinkedIn</a>
+              <a href="/curriculo.pdf" download className="text-sm font-headline font-bold hover:text-primary transition-colors">Currículo</a>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Contato</h4>
