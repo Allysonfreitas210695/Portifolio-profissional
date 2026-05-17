@@ -57,11 +57,11 @@ const projects = [
   },
   {
     id: 5,
-    title: "Mente Contábil",
+    title: "Caixinha",
     description:
-      "Dá ao contador visão executiva da carteira: indicadores, alertas e relatórios que transformam dados brutos em decisão estratégica para o cliente final.",
-    image: "/projects/mente_contabil.png",
-    link: "https://ledger-mind-xi.vercel.app",
+      "Caixinha é uma plataforma de gestão financeira pessoal que permite controlar receitas e despesas de forma simples e inteligente.\n\nO usuário registra suas movimentações, organiza por categorias e acompanha o fluxo de caixa por meio de um dashboard com gráficos e relatórios. A plataforma também consegue ler comprovantes e recibos automaticamente, extraindo os dados da transação sem precisar digitar nada.\n\nCom base no histórico financeiro, o sistema gera insights personalizados apontando padrões de gasto e oportunidades de economia. Além disso, conta com um painel administrativo completo para gerenciamento de usuários, envio de mensagens e registro de todas as ações realizadas na plataforma.",
+    image: "/projects/caixinha.png",
+    link: "https://caixinha-br.vercel.app",
     tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
     color: "from-purple-500/20",
   },
@@ -155,9 +155,11 @@ export default function ProjectsSlider() {
                 <h3 className="font-headline group-hover:text-primary mb-3 text-2xl font-bold tracking-tight transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-on-surface-variant font-body line-clamp-2 text-sm leading-relaxed">
-                  {project.description}
-                </p>
+                <div className="text-on-surface-variant font-body space-y-2 text-sm leading-relaxed">
+                  {project.description.split("\n\n").map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
               </div>
             </a>
           ))}

@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative overflow-x-hidden">
       <Navbar />
-      
+
       <Hero />
 
       {/* Trust Bar Placeholder */}
@@ -27,14 +27,14 @@ export default function Home() {
       <ProjectsSlider />
 
       <About />
-      
+
       <Services />
-      
+
       <Experience />
 
       <Education />
-      
-       <section id="contato" className="py-24 md:py-40 max-w-7xl mx-auto px-6 sm:px-8">
+
+      <section id="contato" className="py-24 md:py-40 max-w-7xl mx-auto px-6 sm:px-8">
         <div className="relative bg-linear-to-br from-surface-container-low to-background p-8 md:p-32 rounded-3xl md:rounded-[3.5rem] border border-white/5 overflow-hidden group">
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-7xl font-headline font-bold mb-8 leading-[1.1] tracking-tighter">
@@ -42,11 +42,11 @@ export default function Home() {
               <span className="text-gradient">sólido juntos?</span>
             </h2>
             <p className="text-base md:text-xl text-on-surface-variant font-body mb-12 max-w-2xl mx-auto leading-relaxed">
-              Estou pronto para aplicar minha experiência técnica no seu próximo desafio. 
+              Estou pronto para aplicar minha experiência técnica no seu próximo desafio.
               Soluções Fullstack que unem robustez no backend e agilidade no frontend.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-              <a 
+              <a
                 href="https://wa.me/5584998138643"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +54,7 @@ export default function Home() {
               >
                 Falar no WhatsApp
               </a>
-              <a 
+              <a
                 href="mailto:alisonfr83@gmail.com"
                 className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors flex items-center justify-center opacity-60 pointer-events-none"
               >
@@ -62,7 +62,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          
+
           {/* Decorative Background Elements */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -z-10 group-hover:bg-primary/20 transition-colors" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-[100px] -z-10" />
@@ -77,23 +77,16 @@ export default function Home() {
               <span className="text-2xl font-bold font-headline tracking-tighter text-on-surface text-balance">Allyson Freitas</span>
             </div>
             <p className="text-sm font-label text-on-surface-variant tracking-wider max-w-xs">
-             &copy; {new Date().getFullYear()} Allyson Freitas. <br />
+              &copy; {new Date().getFullYear()} Allyson Freitas. <br />
               Desenvolvedor Fullstack .NET & Next.js.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Social</h4>
               <a href="https://github.com/Allysonfreitas210695" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">GitHub</a>
               <a href="https://www.linkedin.com/in/allyson-freitas-03326128a/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">LinkedIn</a>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Projetos</h4>
-              <a href="https://mesafy-teal.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">Mesafy</a>
-              <a href="https://barberagendaonline.com.br/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">BarberAgenda Online</a>
-              <a href="https://odonto-sys-henna.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">OdontoSys</a>
-              <a href="https://ledger-mind-xi.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors opacity-60 pointer-events-none">Mente Contábil</a>
             </div>
             <div className="flex flex-col gap-4">
               <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Legal</h4>
