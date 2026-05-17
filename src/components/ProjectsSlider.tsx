@@ -221,7 +221,7 @@ export default function ProjectsSlider() {
       <AnimatePresence>
         {selected && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-4"
+            className="fixed inset-0 z-50 flex items-end justify-center p-3 sm:items-center sm:p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -230,7 +230,7 @@ export default function ProjectsSlider() {
             <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
 
             <motion.div
-              className="bg-surface-container relative flex max-h-[92dvh] w-full max-w-2xl flex-col overflow-hidden rounded-t-3xl sm:rounded-3xl"
+              className="bg-surface-container relative flex max-h-[92dvh] w-full max-w-2xl flex-col overflow-hidden rounded-3xl"
               initial={{ y: 60, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 60, opacity: 0 }}
