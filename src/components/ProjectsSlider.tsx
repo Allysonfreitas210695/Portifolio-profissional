@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExternalLink, X } from "lucide-react";
 
 type Project = {
@@ -118,6 +118,13 @@ const projects: Project[] = [
 
 export default function ProjectsSlider() {
   const [selected, setSelected] = useState<Project | null>(null);
+
+  useEffect(() => {
+    if (!selected) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setSelected(null); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [selected]);
 
   return (
     <>

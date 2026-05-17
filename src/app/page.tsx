@@ -56,7 +56,7 @@ export default function Home() {
               </a>
               <a
                 href="mailto:alisonfr83@gmail.com"
-                className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors flex items-center justify-center opacity-60 pointer-events-none"
+                className="px-8 md:px-12 py-4 md:py-5 bg-surface-container text-on-surface border border-white/10 rounded-2xl font-headline font-bold text-base md:text-lg hover:bg-surface-container-high transition-colors flex items-center justify-center"
               >
                 alisonfr83@gmail.com
               </a>
@@ -89,9 +89,9 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/allyson-freitas-03326128a/" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">LinkedIn</a>
             </div>
             <div className="flex flex-col gap-4">
-              <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Legal</h4>
+              <h4 className="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant">Contato</h4>
               <a href="https://wa.me/5584998138643" target="_blank" rel="noopener noreferrer" className="text-sm font-headline font-bold hover:text-primary transition-colors">WhatsApp</a>
-              <a href="#" className="text-sm font-headline font-bold hover:text-primary transition-colors">Termos</a>
+              <a href="mailto:alisonfr83@gmail.com" className="text-sm font-headline font-bold hover:text-primary transition-colors">E-mail</a>
             </div>
           </div>
         </div>

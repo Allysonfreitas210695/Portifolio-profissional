@@ -19,7 +19,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Início", href: "#" },
     { name: "Projetos", href: "#projetos" },
+    { name: "Sobre", href: "#sobre" },
     { name: "Habilidades", href: "#habilidades" },
+    { name: "Experiência", href: "#experiencia" },
     { name: "Contato", href: "#contato" },
   ];
 
@@ -52,7 +54,7 @@ export default function Navbar() {
         </Magnetic>
 
         {/* Desktop Links */}
-        <div className="hidden items-center gap-10 md:flex">
+        <div className="hidden items-center gap-6 md:flex">
           {navLinks.map((link, i) => (
             <motion.a
               key={link.name}

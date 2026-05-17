@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
     company: "CSJ Sistemas",
     role: "Programador Junior",
     period: "Agosto de 2023 – O momento",
-    duration: "2 anos 8 meses (total na empresa 3a 8m)",
+    duration: "2 anos 8 meses",
     type: "Remoto",
     description:
       "Desenvolvimento de novos aplicativos em React e React Native. Backend com C# (.NET Core). Implementação de melhorias e evoluções em sistemas corporativos existentes.",
@@ -98,6 +98,9 @@ export default function Experience() {
                     <div className="font-label text-on-surface-variant flex items-center gap-2 text-[11px] font-bold tracking-widest uppercase">
                       <MapPin size={14} className="text-secondary" />
                       <span>{exp.type}</span>
+                    </div>
+                    <div className="font-label text-on-surface-variant text-[11px] font-bold tracking-widest uppercase">
+                      {exp.duration}
                     </div>
                   </div>
                 </div>
