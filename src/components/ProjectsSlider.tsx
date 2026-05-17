@@ -9,7 +9,7 @@ const projects = [
     id: 0,
     title: "Mesafy",
     description:
-      "Sistema SaaS de gestão de restaurantes que une a sofisticação dos bistrôs com precisão operacional.",
+      "Organiza o restaurante por dentro: comandas digitais, comunicação direta com a cozinha e visão clara do faturamento em tempo real — do bistrô ao grupo com várias unidades.",
     image: "/projects/masafy.png",
     link: "https://mesafy-teal.vercel.app/",
     tags: ["Next.js", "Tailwind 4", "Prisma", "Framer Motion"],
@@ -18,25 +18,48 @@ const projects = [
   {
     id: 1,
     title: "BarberAgenda Online",
-    description: "Sistema completo para agendamento e gestão de barbearias.",
+    description:
+      "Mais que agendamento: o cliente reserva sozinho pelo celular, o profissional acompanha sua agenda do dia e o dono enxerga faturamento, comissões e ocupação em um só lugar.",
     image: "/projects/barber_agenda_online.png",
     link: "https://barberagendaonline.com.br/",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Multi-tenant", "Tailwind"],
     color: "from-orange-500/20",
   },
   {
     id: 2,
+    title: "EspumaGo",
+    description:
+      "O cliente acompanha seu serviço pelo celular como se fosse um delivery. O lava-jato organiza fila, equipe e produção sem perder nenhum pedido — em veículos, estofados ou colchões.",
+    image: "/projects/espuma_go.png",
+    link: "https://www.espumago.com.br/",
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Real-time", "Tailwind"],
+    color: "from-cyan-500/20",
+  },
+  {
+    id: 3,
+    title: "FrotaSimples",
+    description:
+      "Tira a gestão da frota pública das planilhas: cada veículo, motorista, manutenção e abastecimento rastreável — com prestação de contas pronta para auditoria e transparência.",
+    image: "/projects/frota_simples.png",
+    link: "https://frota-simples.vercel.app/",
+    tags: ["Next.js", "Prisma", "PostgreSQL", "B2G", "Tailwind"],
+    color: "from-emerald-500/20",
+  },
+  {
+    id: 4,
     title: "OdontoSys",
-    description: "Gestão completa para clínicas odontológicas, agendamentos e prontuários.",
+    description:
+      "Da primeira consulta ao tratamento concluído: agenda, prontuário digital e histórico financeiro do paciente conectados em uma única plataforma — clínica organizada, paciente fidelizado.",
     image: "/projects/odonto_sys.png",
     link: "https://odonto-sys-henna.vercel.app",
     tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
     color: "from-blue-500/20",
   },
   {
-    id: 3,
+    id: 5,
     title: "Mente Contábil",
-    description: "Dashboard inteligente para gestão financeira e contabilidade empresarial.",
+    description:
+      "Dá ao contador visão executiva da carteira: indicadores, alertas e relatórios que transformam dados brutos em decisão estratégica para o cliente final.",
     image: "/projects/mente_contabil.png",
     link: "https://ledger-mind-xi.vercel.app",
     tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
