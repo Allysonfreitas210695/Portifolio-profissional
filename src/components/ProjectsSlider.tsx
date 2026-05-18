@@ -30,7 +30,7 @@ const projects: Project[] = [
     ],
     image: "/projects/masafy.png",
     link: "https://mesafy-teal.vercel.app/",
-    tags: ["Next.js", "Tailwind 4", "Prisma", "Framer Motion"],
+    tags: ["Next.js", "Tailwind 4", "Shadcn/ui", "Prisma", "Framer Motion", "Vitest"],
     color: "from-orange-600/20",
   },
   {
@@ -46,7 +46,7 @@ const projects: Project[] = [
     ],
     image: "/projects/barber_agenda_online.png",
     link: "https://barberagendaonline.com.br/",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "Multi-tenant", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Multi-tenant", "Tailwind", "SES", "S3", "Shadcn/ui", "Framer Motion", "TypeScript", "Better Auth", "Vitest", "Turso", "Upstash"],
     color: "from-orange-500/20",
   },
   {
@@ -62,23 +62,23 @@ const projects: Project[] = [
     ],
     image: "/projects/espuma_go.png",
     link: "https://www.espumago.com.br/",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "Real-time", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Real-time", "Tailwind", "Shadcn/ui", "Upstash", "Vitest"],
     color: "from-cyan-500/20",
   },
   {
     id: 3,
     title: "FrotaSimples",
     description:
-      "Tira a gestão da frota pública das planilhas: cada veículo, motorista, manutenção e abastecimento rastreável — com prestação de contas pronta para auditoria e transparência.",
+      "Tira a gestão de frotas das planilhas: controle total sobre veículos, motoristas, manutenções e abastecimentos em tempo real — reduzindo custos operacionais e otimizando a logística da sua empresa.",
     features: [
-      "Cadastro completo de veículos e motoristas",
-      "Controle de manutenções e abastecimentos",
-      "Relatórios prontos para auditoria pública",
-      "Transparência e rastreabilidade de cada operação",
+      "Controle detalhado de manutenções preventivas e corretivas",
+      "Monitoramento de abastecimentos e consumo médio por veículo",
+      "Cadastro centralizado de motoristas e histórico de utilização",
+      "Relatórios inteligentes de custos e desempenho operacional",
     ],
     image: "/projects/frota_simples.png",
     link: "https://frota-simples.vercel.app/",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "B2G", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "B2B", "Tailwind", "Shadcn/ui", "Vitest"],
     color: "from-emerald-500/20",
   },
   {
@@ -94,7 +94,7 @@ const projects: Project[] = [
     ],
     image: "/projects/odonto_sys.png",
     link: "https://odonto-sys-henna.vercel.app",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind", "Vitest"],
     color: "from-blue-500/20",
   },
   {
@@ -111,7 +111,7 @@ const projects: Project[] = [
     ],
     image: "/projects/caixinha.png",
     link: "https://caixinha-br.vercel.app",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "shadcn/ui", "Tailwind", "Vitest"],
     color: "from-purple-500/20",
   },
 ];
