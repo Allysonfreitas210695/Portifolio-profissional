@@ -62,7 +62,7 @@ const projects: Project[] = [
     ],
     image: "/projects/espuma_go.png",
     link: "https://www.espumago.com.br/",
-    tags: ["Next.js", "Prisma", "PostgreSQL", "Real-time", "Tailwind", "Shadcn/ui", "Upstash", "Vitest"],
+    tags: ["Next.js", "Prisma", "PostgreSQL", "Real-time", "Tailwind", "Shadcn/ui", "Upstash", "SES", "S3", "Vitest"],
     color: "from-cyan-500/20",
   },
   {
